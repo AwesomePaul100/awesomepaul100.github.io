@@ -1,254 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Paul Amoruso — Interactive CV</title>
-  <meta name="description" content="Paul Amoruso, UCF Ph.D. Candidate — Computer Engineering, Assistive AI for Education, FPGA Acceleration." />
-  <style>
-    :root{
-      --bg:#0f1220;
-      --panel:#161a2f;
-      --ink:#e6e8f2;
-      --muted:#a7abc7;
-      --accent:#7aa2ff;
-      --accent-2:#6be6a6;
-      --link:#83c9ff;
-      --chip:#23284a;
-    }
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", sans-serif; line-height: 1.4; }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .wrap { max-width: 1024px; margin: 0 auto; padding: 24px; }
-    header {
-      display: grid; gap: 12px; align-items: center;
-      grid-template-columns: 72px 1fr auto;
-      background: linear-gradient(180deg, rgba(122,162,255,0.10), transparent);
-      border-bottom: 1px solid #20254a;
-      padding-bottom: 16px;
-    }
-    .avatar {
-      width: 64px; height: 64px; border-radius: 50%;
-      background: var(--chip);
-      display: grid; place-items: center; font-weight: 800; letter-spacing: 1px;
-      border: 1px solid #26315f;
-    }
-    .name h1 { margin: 0; font-size: 1.6rem; }
-    .name p { margin: 4px 0 0; color: var(--muted); }
-    .actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
-    .btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      color: white; background: var(--accent); padding: 8px 12px; border-radius: 8px; border: 0;
-      font-weight: 600;
-    }
-    .btn.secondary { background: var(--chip); color: var(--ink); border: 1px solid #2b2f53; }
-    nav {
-      margin-top: 12px; border-top: 1px solid #20254a; border-bottom: 1px solid #20254a;
-      background: rgba(255,255,255,0.02);
-    }
-    nav ul { list-style: none; margin: 0; padding: 8px 0; display: flex; flex-wrap: wrap; gap: 10px; }
-    nav a { padding: 6px 10px; border-radius: 6px; color: var(--ink); }
-    nav a:hover { background: #1f2546; }
-    main { display: grid; grid-template-columns: 1fr; gap: 28px; margin-top: 20px; }
-    section { background: var(--panel); border: 1px solid #20254a; border-radius: 12px; padding: 18px; }
-    h2 { margin: 0 0 12px; font-size: 1.25rem; border-left: 4px solid var(--accent-2); padding-left: 10px; }
-    h3 { margin-top: 16px; margin-bottom: 8px; font-size: 1.05rem; }
-    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
-    .chip { background: var(--chip); border: 1px solid #2b2f53; color: var(--ink); padding: 6px 10px; border-radius: 999px; font-size: 0.92rem; }
-    .muted { color: var(--muted); }
-    ul { margin: 8px 0 0 20px; }
-    li { margin: 4px 0; }
-    footer { color: var(--muted); text-align: center; margin: 28px 0 8px; }
-    @media (max-width: 720px){
-      header{ grid-template-columns: 56px 1fr; }
-      .actions{ grid-column: 1 / -1; }
-      .grid-2 { grid-template-columns: 1fr; }
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Paul Amoruso — Interactive CV</title>
+<meta name="description" content="Paul Amoruso, UCF Ph.D. Candidate — Computer Engineering, Assistive AI for Education, FPGA Acceleration." />
+
+<style>
+/* --- THEME PRESERVED EXACTLY AS ORIGINAL --- */
+:root{
+  --bg:#0f1220;
+  --panel:#161a2f;
+  --ink:#e6e8f2;
+  --muted:#a7abc7;
+  --accent:#7aa2ff;
+  --accent-2:#6be6a6;
+  --link:#83c9ff;
+  --chip:#23284a;
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0;
+  background: var(--bg); color: var(--ink);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  line-height: 1.4;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 1024px; margin: 0 auto; padding: 24px; }
+header {
+  display: grid; gap: 12px; align-items: center;
+  grid-template-columns: 72px 1fr auto;
+  background: linear-gradient(180deg, rgba(122,162,255,0.10), transparent);
+  border-bottom: 1px solid #20254a;
+  padding-bottom: 16px;
+}
+.avatar {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: var(--chip);
+  display: grid; place-items: center; font-weight: 800; letter-spacing: 1px;
+  border: 1px solid #26315f;
+}
+.name h1 { margin: 0; font-size: 1.6rem; }
+.name p { margin: 4px 0 0; color: var(--muted); }
+main { display: grid; gap: 28px; margin-top: 20px; }
+section { background: var(--panel); border: 1px solid #20254a; border-radius: 12px; padding: 18px; }
+h2 { margin: 0 0 12px; font-size: 1.25rem; border-left: 4px solid var(--accent-2); padding-left: 10px; }
+h3 { margin-top: 16px; margin-bottom: 8px; font-size: 1.05rem; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  background: var(--chip); border: 1px solid #2b2f53;
+  color: var(--ink); padding: 6px 10px;
+  border-radius: 999px; font-size: 0.92rem;
+}
+.muted { color: var(--muted); }
+ul { margin: 8px 0 0 20px; }
+li { margin: 4px 0; }
+footer { color: var(--muted); text-align: center; margin: 28px 0 8px; }
+@media (max-width: 720px){
+  header{ grid-template-columns: 56px 1fr; }
+  .grid-2 { grid-template-columns: 1fr; }
+}
+</style>
 </head>
+
 <body>
-  <div class="wrap">
-    <header>
-      <div class="avatar" aria-label="Initials">PA</div>
-      <div class="name">
-        <h1>Paul Amoruso, M.S. · UCF Ph.D. Candidate</h1>
-        <p>Computer Engineering · Assistive AI for Education · FPGA Acceleration ·
-          <span class="muted">UCF ECE Future Faculty Laureate (FFL) 2024–2026</span>
-        </p>
-        
-      </div>
-      
-    </header>
+<div class="wrap">
 
-    
-    <main>
-      <!-- About -->
-      <section id="about" aria-labelledby="about-heading">
-        <h2 id="about-heading">About / Objective</h2>
-        <div class="grid-2">
-          <div>
-            <p>
-              I am pursuing an Assistant Professor position at a Research‑1 (R1) institution. My academic program
-              spans FPGA acceleration for AI, assistive AI for adaptive micro‑credentialing, and evolving instructional
-              practices in STEM higher education.
-            </p>
-            <h3>Education</h3>
-            <ul>
-              <li><strong>Ph.D., Computer Engineering</strong>, University of Central Florida — <em>Fall 2023–Present</em> · GPA: 4.0</li>
-              <li><strong>M.S., Computer Engineering</strong>, University of Central Florida — <em>Spring 2022–Spring 2023</em></li>
-              <li><strong>B.S., Computer Engineering</strong>, University of Central Florida — <em>2017–2021</em></li>
-            </ul>
-          </div>
-          <aside>
-            <h3>Skills</h3>
-            <div class="chips" aria-label="Technical skills">
-              <span class="chip">C/C++</span>
-              <span class="chip">Python</span>
-              <span class="chip">Verilog</span>
-              <span class="chip">FPGA (Vitis HLS)</span>
-              <span class="chip">PyTorch</span>
-              <span class="chip">Machine Learning</span>
-              <span class="chip">REST API</span>
-              <span class="chip">HTML</span>
-              <span class="chip">Java</span>
-              <span class="chip">MATLAB</span>
-              <span class="chip">Assembly</span>
-              <span class="chip">Linux</span>
-              <span class="chip">SQL</span>
-            </div>
-            <h3>Languages</h3>
-            <p>English (Native) · Italian (Fluent) · Spanish (Familiarized)</p>
-          </aside>
-        </div>
-      </section>
-
-      <!-- Experience -->
-      <section id="experience" aria-labelledby="exp-heading">
-        <h2 id="exp-heading">Professional Experience</h2>
-
-        <h3>Research</h3>
-        <p><strong>Graduate Research Assistant</strong> — Computer Architecture Lab, University of Central Florida <span class="muted">(2022–Present)</span></p>
-        <ul>
-          <li>Lead GRA on a 5‑year NSF project on Assistive AI for micro‑credentialing and Generative AI remediation.</li>
-          <li>Publications spanning ECE AI and STEM Education.</li>
-          <li>Agent‑based model for staffing optimization <span class="muted">(CSSSA Best Poster Award)</span>.</li>
-          <li>Developed Feature‑Oriented Cellular Automata Learning (FOCAL) model <span class="muted">(IEEE IS 2024)</span>.</li>
-        </ul>
-
-        <h3>Teaching</h3>
-        <ul>
-          <li><strong>EEL3801 — Computer Organization (Fall 2025)</strong> — Instructor of Record; ISA, assembly, datapath/control, memory hierarchy, performance analysis.</li>
-          <li><strong>EEE4701 — Verification &amp; Validation of Digital Systems (Fall 2025)</strong> — Graduate Teaching Grader; RTL verification, Constrained Random, UVM.</li>
-          <li><strong>EEE4750 — Digital Signal Processing Fundamentals (Fall 2025)</strong> — Graduate Teaching Grader; discrete‑time signals, Z‑transform, DFT, filter design.</li>
-          <li><strong>EEL3801 — Computer Organization (Summer 2022–Summer 2025)</strong> — Graduate Teaching Grader &amp; Guest Lecturer; Best Graduate TA Award (2023); led Canvas Classic→New Quiz migration; mentored UTAs.</li>
-          <li><strong>EGS1006 — Introduction to Engineering (2019)</strong> — Undergraduate TA.</li>
-          <li><strong>High‑School Honors Biology Assistant (2017)</strong> — Student assistant.</li>
-        </ul>
-
-        <h3>Industry</h3>
-        <p><strong>Junior Consultant</strong> — EMA Computers, Inc. <span class="muted">(2015–Present)</span></p>
-        <ul>
-          <li>IT consulting, deployment, malware mitigation, SEO, and websites.</li>
-        </ul>
-      </section>
-
-      <!-- Publications -->
-      <section id="publications" aria-labelledby="pubs-heading">
-        <h2 id="pubs-heading">Publications</h2>
-
-        <h3>Journal</h3>
-        <ul>
-          <li><em>AchieveUp: Personalizing Digitized Assessments and Remediation</em> — ASEE COED Journal, 2025 (in press).</li>
-          <li><em>Compression‑Based Feature Clustering using HLS for Low‑Footprint FPGA Text Classification</em> — in preparation.</li>
-        </ul>
-
-        <h3>Conference — Technical</h3>
-        <ul>
-          <li><em>Machine Learning Optimization for Neuromorphic Acceleration</em> — submitted to GLSVLSI 2025.</li>
-          <li><em>Metaheuristics for Multi‑Objective Optimization in Reconfigurable Fabrics</em> — submitted to GLSVLSI 2025.</li>
-          <li><em>IUSE:HSI: NetLogo‑based Estimation of Tutoring Demand</em> — ASEE 2025.</li>
-          <li><em>FOCAL: Feature‑Oriented Cellular Automata Learning</em> — IEEE‑IS 2024.</li>
-        </ul>
-
-        <h3>Conference — STEM Education</h3>
-        <ul>
-          <li><em>Progressing from Micro‑Credentialing to Micro‑Recruiting</em> — IEEE FIE 2025 (submitted).</li>
-          <li><em>Compression‑Assisted Zero‑Shot Prompting of LLMs</em> — GLSVLSI 2025.</li>
-          <li><em>GenAIprime: Generative AI for Remediation‑Priming</em> — ISEC 2025.</li>
-          <li><em>Automated Micro‑Credentialing &amp; AI‑Enhanced Remediation</em> — FOIS 2025 (in preparation).</li>
-          <li><em>Agent‑Based Model for Optimal Remedial Staffing</em> — CSSSA 2024 (Best Poster Award).</li>
-          <li><em>Instructor‑Facing GUI for Micro‑Credentialing</em> — ASEE‑SE 2024.</li>
-          <li><em>Personalizing Assessments with Automated Micro‑Credentialing</em> — OLC 2022.</li>
-        </ul>
-      </section>
-
-      <!-- Honors -->
-      <section id="honors" aria-labelledby="honors-heading">
-        <h2 id="honors-heading">Honors &amp; Awards</h2>
-        <ul>
-          <li><strong>David T. and Jane M. Donaldson Perpetual Memorial Scholarship</strong> — 2025 ($2,000).</li>
-          <li><strong>Future Faculty Laureate</strong> — UCF ECE, 2024–2026 ($12,000 support).</li>
-          <li><strong>Best Graduate Teaching Assistant Award</strong> — UCF ECE, 2023.</li>
-          <li><strong>UCF 3MT Competition Finalist</strong> — 2022.</li>
-          <li><strong>CECS Senior Design Showcase — 1st Place</strong> — 2021.</li>
-          <li>Dean’s List: 2018–2021; President’s Honor Roll: 2020.</li>
-          <li>ACM Complimentary Membership (Reviewer Service): 2024.</li>
-          <li>In‑kind collaboration: Adzuna Inc. API access ($2,000 academic plan), 2025.</li>
-        </ul>
-      </section>
-
-      <!-- Seminars -->
-      <section id="seminars" aria-labelledby="seminars-heading">
-        <h2 id="seminars-heading">Seminars &amp; Presentations</h2>
-        <ul>
-          <li>SITE Interactive 2025 — Catalyst Conversation, Online, Sept 11–12, 2025.</li>
-          <li>Great Lakes Symposium on VLSI — New Orleans, July 1, 2025.</li>
-          <li>ASEE Annual Conference — Montreal, June 24, 2025.</li>
-          <li>Florida Online Innovation Summit (FOIS) — Orlando, Apr 10, 2025.</li>
-          <li>ISEC — Princeton, Mar 15, 2025.</li>
-          <li>CSSSA — Santa Fe, Oct 24–27, 2024 (Best Poster Award).</li>
-          <li>IEEE‑IS — Varna, Aug 29–31, 2024.</li>
-          <li>ASEE‑SE — Marietta, Mar 10–12, 2024.</li>
-          <li>OLC — Orlando, Nov 15, 2022.</li>
-        </ul>
-      </section>
-
-      <!-- Certificates -->
-      <section id="certificates" aria-labelledby="certs-heading">
-        <h2 id="certs-heading">Certificates</h2>
-        <ul>
-          <li>AI Fundamentals for Faculty Members — UCF Faculty Center for Teaching &amp; Learning, Summer 2025.</li>
-          <li>IDS 6513 “Preparing Tomorrow’s Faculty” — Higher Education Teaching Program, Fall 2024.</li>
-        </ul>
-      </section>
-
-      <!-- Service -->
-      <section id="service" aria-labelledby="service-heading">
-        <h2 id="service-heading">Professional Service</h2>
-        <ul>
-          <li>Reviewer: ACM Winter Simulation Conference (Education Track, 2024); ASEE National Conference (NSF Grantees Poster Session, 2024); GLSVLSI Workshops (2025).</li>
-          <li>Leadership: Student Laureates of STEM Teaching &amp; Learning (Vice President, 2023–Present); CHIDA — Computer Hardware Innovation and Design Association (President, 2023–Present).</li>
-          <li>Memberships: IEEE; ASEE; CSSSA.</li>
-          <li>Outreach: Mentored CS senior design teams; guided GTAs/UTAs.</li>
-        </ul>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact" aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Contact &amp; Actions</h2>
-        <p>
-          <strong>Email:</strong> paul.amoruso@ucf.edu</a>
-          </a>
-        </p>
-      </section>
-    </main>
-
-    <footer>
-      <p>Interactive CV · All content © Paul Amoruso</p>
-    </footer>
+<header>
+  <div class="avatar" aria-label="Initials">PA</div>
+  <div class="name">
+    <h1>Paul Amoruso, M.S. · UCF Ph.D. Candidate</h1>
+    <p>Computer Engineering · Assistive AI for Education · FPGA Acceleration · 
+      <span class="muted">UCF ECE Future Faculty Laureate (2024–2026)</span>
+    </p>
   </div>
+</header>
+
+<main>
+
+<!-- ABOUT -->
+<section id="about">
+<h2>About / Objective</h2>
+<div class="grid-2">
+
+<div>
+  <p>
+    I am pursuing an Assistant Professor role at a research-intensive institution, advancing scholarship in
+    assistive AI, adaptive micro‑credentialing, FPGA acceleration, and STEM learner analytics. My ongoing
+    doctoral work integrates AI/ML methods, educational data mining, assessment automation, and
+    hardware–software co‑design to enhance teaching, learning, and workforce preparation.
+  </p>
+
+  <h3>Education</h3>
+  <ul>
+    <li><strong>Ph.D., Computer Engineering</strong>, University of Central Florida — <em>2023–Present</em> · GPA: 4.0</li>
+    <li><strong>M.S., Computer Engineering</strong>, University of Central Florida — <em>2022–2023</em></li>
+    <li><strong>B.S., Computer Engineering</strong>, University of Central Florida — <em>2017–2021</em>, Summa Cum Laude</li>
+  </ul>
+</div>
+
+<aside>
+  <h3>Skills</h3>
+  <div class="chips">
+    <span class="chip">C/C++</span><span class="chip">Python</span><span class="chip">Verilog</span>
+    <span class="chip">Vitis HLS</span><span class="chip">PyTorch</span><span class="chip">Machine Learning</span>
+    <span class="chip">FPGA</span><span class="chip">REST API</span><span class="chip">MATLAB</span>
+    <span class="chip">SQL</span><span class="chip">Linux</span><span class="chip">Java</span>
+    <span class="chip">Assembly</span><span class="chip">HTML/XML</span><span class="chip">TI‑RSLK</span>
+  </div>
+
+  <h3>Languages</h3>
+  <p>English (Native) · Italian (Fluent) · Spanish (Familiarized)</p>
+</aside>
+
+</div>
+</section>
+
+
+<!-- EXPERIENCE -->
+<section id="experience">
+<h2>Professional Experience</h2>
+
+<h3>Research</h3>
+<p><strong>Graduate Research Assistant</strong> — Computer Architecture Lab, UCF <span class="muted">(2022–Present)</span></p>
+<ul>
+  <li>Lead technical GRA for a 5‑year NSF IUSE‑HSI grant on Assistive AI, micro‑credentialing, and remediation.</li>
+  <li>Research areas: FPGA acceleration, ML optimization, automated assessment, and AI‑generated remediation.</li>
+  <li>Developed FOCAL (Feature‑Oriented Cellular Automata Learning) model (IEEE‑IS 2024).</li>
+  <li>Published across ECE hardware acceleration, STEM education, and learner analytics.</li>
+</ul>
+
+<h3>Teaching</h3>
+<ul>
+  <li><strong>EEL3801 — Computer Organization (Fall 2025–Present)</strong> — Instructor of Record; ARMv7 ISA, datapath/control, memory hierarchy, performance analysis.</li>
+  <li><strong>EGN3420 — Engineering Analysis (Spring 2026)</strong> — Graduate Teaching Grader.</li>
+  <li><strong>EEE4750 — DSP Fundamentals (Fall 2025–Present)</strong> — Graduate Teaching Grader.</li>
+  <li><strong>EEE4701 — Digital Systems Verification (Fall 2025)</strong> — Graduate Teaching Grader.</li>
+  <li><strong>EEL3801 (Summer 2022–Summer 2025)</strong> — Graduate Teaching Grader; Best Graduate TA Award (2023).</li>
+</ul>
+
+<h3>Industry</h3>
+<p><strong>Information Technology Consultant</strong> — EMA Computers, Inc. <span class="muted">(2015–2024)</span></p>
+<ul>
+  <li>Enterprise IT, server provisioning, malware mitigation, firewall deployment.</li>
+  <li>Developed software tools and websites; contributed to AI‑based monitoring systems.</li>
+</ul>
+
+</section>
+
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+<h2>Publications & Proceedings</h2>
+
+<h3>Journal</h3>
+<ul>
+  <li><em>AchieveUp: Personalizing Digitized Assessments and Remediation</em> — ASEE COED Journal, 2025.</li>
+  <li><em>Compression‑Based Feature Clustering using HLS for FPGA Text Classification</em> — submitted to IEEE Access.</li>
+</ul>
+
+<h3>Conference — Technical</h3>
+<ul>
+  <li><em>Prompt Engineering for FPGA Design</em> — IEEE ICM 2025.</li>
+  <li><em>Compression‑Assisted Zero‑Shot Prompting of LLMs</em> — GLSVLSI 2025.</li>
+  <li><em>FOCAL: Feature‑Oriented Cellular Automata Learning</em> — IEEE‑IS 2024.</li>
+  <li><em>IUSE:HSI: NetLogo‑Based Estimation of Tutoring Demand</em> — ASEE 2025.</li>
+</ul>
+
+<h3>Conference — Education & AI</h3>
+<ul>
+  <li><em>GenAIprime: Generative AI for Remediation‑Priming</em> — ISEC 2025.</li>
+  <li><em>Progressing from Micro‑Credentialing to Micro‑Recruiting</em> — FIE 2025.</li>
+  <li><em>Instructor‑Facing GUI for Micro‑Credentialing</em> — ASEE‑SE 2024.</li>
+  <li><em>Personalizing Assessments with Automated Micro‑Credentialing</em> — OLC 2022.</li>
+</ul>
+
+</section>
+
+
+<!-- HONORS -->
+<section id="honors">
+<h2>Honors & Awards</h2>
+<ul>
+  <li><strong>David T. & Jane M. Donaldson Scholarship</strong> — 2025–2026 ($2,000).</li>
+  <li><strong>Future Faculty Laureate</strong> — UCF ECE, 2024–2026 ($12,000).</li>
+  <li><strong>Best Graduate Teaching Assistant Award</strong> — UCF ECE, 2023.</li>
+  <li><strong>Best Poster Award</strong> — CSSSA 2024.</li>
+  <li>UCF 3MT Finalist (2022), CECS Senior Design 1st Place (2021).</li>
+</ul>
+</section>
+
+
+<!-- SERVICE -->
+<section id="service">
+<h2>Professional Service</h2>
+<ul>
+  <li>Board Member — Computational Social Science Society of the Americas (CSSSA), 2025–Present.</li>
+  <li>Reviewer — ASEE National Conference (2025–2026), ACM WSC 2024, GLSVLSI Workshops 2025.</li>
+  <li>Leadership — CHIDA President; SLSTL Vice President (2023–Present).</li>
+</ul>
+</section>
+
+
+<!-- SEMINARS -->
+<section id="seminars">
+<h2>Seminars & Presentations</h2>
+<ul>
+  <li>SITE Interactive 2025 — Catalyst Conversation.</li>
+  <li>Great Lakes Symposium on VLSI — July 2025.</li>
+  <li>ASEE Annual Conference — Montreal, June 2025.</li>
+  <li>ISEC — Princeton, Mar 2025.</li>
+  <li>CSSSA — Santa Fe, Oct 2024 (Best Poster Award).</li>
+</ul>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+<p>
+  <strong>Email:</strong> paul.amoruso@ucf.edu<br/>
+  <strong>GitHub:</strong> <a href="https://github.com/AwesomePaul100">AwesomePaul100</a><br/>
+  <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/paul-amoruso-761081136/">LinkedIn Profile</a>
+</p>
+</section>
+
+</main>
+
+<footer>
+  <p>Interactive CV · All content © Paul Amoruso</p>
+</footer>
+
+</div>
 </body>
 </html>
-
