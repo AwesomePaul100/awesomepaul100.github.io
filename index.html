@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paul Amoruso — Ph.D. Candidate, UCF</title>
+<title>Paul Amoruso — Ph.D., UCF</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -101,7 +100,7 @@
 
   .hero-tagline {
     font-size: clamp(19px, 2.5vw, 24px); font-weight: 300;
-    color: var(--mid-gray); max-width: 560px; margin: 0 auto 36px;
+    color: var(--mid-gray); max-width: 600px; margin: 0 auto 36px;
     line-height: 1.5;
     animation: fadeSlideUp 0.8s 0.2s ease both;
   }
@@ -285,6 +284,7 @@
   .badge-conf { background: rgba(52,199,89,0.1); color: #1a7a34; }
   .badge-submitted { background: rgba(245,99,0,0.1); color: #c14800; }
   .badge-award { background: rgba(255,214,10,0.2); color: #8a6000; }
+  .badge-accepted { background: rgba(134,134,139,0.12); color: #444; }
 
   /* ── AWARDS ── */
   .awards-grid {
@@ -326,6 +326,7 @@
   .role-ior { background: rgba(0,113,227,0.1); color: var(--accent); }
   .role-gtg { background: rgba(52,199,89,0.1); color: #1a7a34; }
   .role-uta { background: rgba(245,99,0,0.1); color: #c14800; }
+  .role-sub { background: rgba(134,134,139,0.12); color: #444; }
   .teaching-body { flex: 1; }
   .teaching-course {
     font-size: 17px; font-weight: 600; color: var(--dark-gray); margin-bottom: 2px;
@@ -400,9 +401,9 @@
 
 <!-- HERO -->
 <section class="hero" id="about">
-  <div class="hero-badge">🎓 UCF ECE Future Faculty Laureate</div>
+  <div class="hero-badge">🎓 UCF ECE Future Faculty Laureate · CSSSA Board Member</div>
   <h1>Paul <em>Amoruso</em></h1>
-  <p class="hero-tagline">Ph.D. Candidate in Computer Engineering at UCF — advancing AI-driven education, FPGA acceleration, and micro-credentialing for the next generation of STEM learners.</p>
+  <p class="hero-tagline">Ph.D. in Computer Engineering at UCF — advancing AI-driven education, FPGA acceleration, and micro-credentialing for the next generation of STEM learners.</p>
   <div class="hero-links">
     <a href="mailto:paul.amoruso@ucf.edu" class="btn-primary">Get in Touch</a>
     <a href="https://www.linkedin.com/in/paul-amoruso-761081136/" target="_blank" class="btn-secondary">LinkedIn</a>
@@ -423,7 +424,7 @@
       <div class="stat-label">Ph.D. GPA</div>
     </div>
     <div class="stat">
-      <div class="stat-num">16<span>+</span></div>
+      <div class="stat-num">18<span>+</span></div>
       <div class="stat-label">Publications & Presentations</div>
     </div>
     <div class="stat">
@@ -451,7 +452,7 @@
           <div class="edu-degree">Ph.D., Computer Engineering</div>
           <div class="edu-school">ECE Department · University of Central Florida · Advisor: Dr. Ronald F. DeMara</div>
           <div class="edu-meta">
-            <span class="tag tag-year">Fall 2023 – Present</span>
+            <span class="tag tag-year">Fall 2023 – Spring 2026</span>
             <span class="tag tag-gpa">GPA 4.0/4.0</span>
           </div>
           <p style="font-size:14px; color:var(--mid-gray); margin-top:12px; font-style:italic; line-height:1.5;">
@@ -513,7 +514,7 @@
 
     <div class="research-card reveal">
       <h3>FPGA Acceleration of ML Workloads</h3>
-      <p>I investigate hardware acceleration techniques using FPGAs and HLS (High-Level Synthesis) for low-footprint text classification tasks, enabling efficient on-device inference for edge educational systems. Recent work explores compression-based feature clustering targeting resource-constrained FPGA platforms.</p>
+      <p>I investigate hardware acceleration techniques using FPGAs and HLS (High-Level Synthesis) for low-footprint text classification tasks, enabling efficient on-device inference for edge educational systems. Recent work explores compression-based feature clustering and LLM inference acceleration targeting resource-constrained FPGA platforms.</p>
       <div class="research-tags">
         <span class="rtag">FPGA</span>
         <span class="rtag">HLS / Vitis</span>
@@ -525,7 +526,7 @@
 
     <div class="research-card reveal">
       <h3>Agent-Based & Computational Social Science</h3>
-      <p>I apply agent-based modeling (ABM) to predict student performance, simulate optimal remedial staffing, and model the dynamics of learner ecosystems. This cross-disciplinary work bridges ECE, education research, and computational social science — including a Best Poster Award at CSSSA 2024.</p>
+      <p>I apply agent-based modeling (ABM) to predict student performance, simulate optimal remedial staffing, and model the dynamics of learner ecosystems. This cross-disciplinary work bridges ECE, education research, and computational social science — including a Best Poster Award at CSSSA 2024 and ongoing board membership.</p>
       <div class="research-tags">
         <span class="rtag">Agent-Based Modeling</span>
         <span class="rtag">NetLogo</span>
@@ -541,9 +542,10 @@
   <div class="section-inner">
     <p class="section-eyebrow reveal">Scholarship</p>
     <h2 class="section-title reveal">Publications &amp; Presentations</h2>
-    <p class="section-subtitle reveal">16+ peer-reviewed papers, conference presentations, and posters spanning IEEE, ASEE, and international venues.</p>
+    <p class="section-subtitle reveal">18 peer-reviewed papers, conference presentations, and posters spanning IEEE, ASEE, and international venues.</p>
     <div class="pub-list">
 
+      <!-- JOURNAL -->
       <div class="pub-item reveal">
         <div class="pub-num">J2</div>
         <div class="pub-body">
@@ -557,8 +559,100 @@
         <div class="pub-num">J1</div>
         <div class="pub-body">
           <div class="pub-title">AchieveUp: Personalizing Digitized Assessments and Remediation using an Automated Micro-Credentialing Framework for Canvas LMS</div>
-          <div class="pub-meta">P. Amoruso et al. · ASEE Computers in Education (COED) Journal 14(4), 2025</div>
+          <div class="pub-meta">P. Amoruso, L. O. Campbell, J. A. Mejia, F. E. Hernandez, R. F. DeMara · ASEE Computers in Education (COED) Journal 14(4), 2025. DOI: 10.18260/B34C-2C-10192</div>
           <span class="pub-badge badge-journal">Journal</span>
+        </div>
+      </div>
+
+      <!-- CONFERENCE 2026 -->
+      <div class="pub-item reveal">
+        <div class="pub-num">C18</div>
+        <div class="pub-body">
+          <div class="pub-title">Score-Reflow: Automating Grade Refinement Across Learning Management Systems in a Large-Enrollment Microelectronics Laboratory Course</div>
+          <div class="pub-meta">P. E. Amoruso, M. Hossain, E. L. Amoruso · Great Lakes Symposium on VLSI 2026, Finger Lakes, NY, USA, June 22–24. DOI: 10.1145/3787109.3816049</div>
+          <span class="pub-badge badge-accepted">Accepted</span>
+        </div>
+      </div>
+
+      <div class="pub-item reveal">
+        <div class="pub-num">C17</div>
+        <div class="pub-body">
+          <div class="pub-title">RTL-SMARTIE: An AI-Assisted Tutor for RTL Design Education</div>
+          <div class="pub-meta">R. Yarnell, P. E. Amoruso, A. Emeterio · Great Lakes Symposium on VLSI 2026, Finger Lakes, NY, USA, June 22–24</div>
+          <span class="pub-badge badge-accepted">Accepted</span>
+        </div>
+      </div>
+
+      <div class="pub-item reveal">
+        <div class="pub-num">C16</div>
+        <div class="pub-body">
+          <div class="pub-title">FPGA-based Acceleration of LLM Inference Using Compression-Based Similarity Classification</div>
+          <div class="pub-meta">P. E. Amoruso, R. Yarnell, R. F. DeMara · Great Lakes Symposium on VLSI 2026, Finger Lakes, NY, USA, June 22–24. DOI: 10.1145/3787109.3815321</div>
+          <span class="pub-badge badge-accepted">Accepted</span>
+        </div>
+      </div>
+
+      <div class="pub-item reveal">
+        <div class="pub-num">C15</div>
+        <div class="pub-body">
+          <div class="pub-title">Magic‑Number‑Driven File Integrity Monitoring for Ransomware Detection and Real‑Time Recovery</div>
+          <div class="pub-meta">E. L. Amoruso, P. E. Amoruso, C. C. Zou · IEEE SmartNets, Rome, Italy, July 7–9, 2026</div>
+          <span class="pub-badge badge-accepted">Accepted</span>
+        </div>
+      </div>
+
+      <div class="pub-item reveal">
+        <div class="pub-num">C14</div>
+        <div class="pub-body">
+          <div class="pub-title">Workforce‑Embedded Learning with Generative AI in Hospitality and Tourism: A Hybrid Analysis of Skills, Attitudes, and Curriculum Implications</div>
+          <div class="pub-meta">A. Huang, P. Amoruso, V. Addala, E. de la Mora · UCF AI Spring Research Day, Institute of Artificial Intelligence, Orlando, FL, February 6, 2026</div>
+          <span class="pub-badge badge-conf">Conference</span>
+        </div>
+      </div>
+
+      <div class="pub-item reveal">
+        <div class="pub-num">C13</div>
+        <div class="pub-body">
+          <div class="pub-title">IUSE:HSI: ReQuillify: a Learner-Driven Facility for Building Remediation Capacity in STEM Courses</div>
+          <div class="pub-meta">P. Amoruso, V. R. Addala, A. Pindoria, R. F. DeMara · ASEE 2026 Annual Conference, Charlotte, NC, USA, June 21–24, 2026</div>
+          <span class="pub-badge badge-accepted">Accepted</span>
+        </div>
+      </div>
+
+      <!-- CONFERENCE 2025 -->
+      <div class="pub-item reveal">
+        <div class="pub-num">C12</div>
+        <div class="pub-body">
+          <div class="pub-title">Prompt Engineering for FPGA Design: LLM-Driven Workflows Beyond HLS</div>
+          <div class="pub-meta">R. Yarnell, P. Amoruso, R. F. DeMara · IEEE International Conference on Microelectronics (ICM), Cairo, Egypt, December 14, 2025</div>
+          <span class="pub-badge badge-conf">Conference</span>
+        </div>
+      </div>
+
+      <div class="pub-item reveal">
+        <div class="pub-num">C11</div>
+        <div class="pub-body">
+          <div class="pub-title">Explicating Model Parameters of Human Tutor and AI-based Assistance to Bolster Micro-Credentialing: 14 Semesters of Multivariate Learner Data</div>
+          <div class="pub-meta">P. Amoruso, B. Chen, R. F. DeMara · CSSSA Annual Conference, Santa Fe, NM, USA, November 6–9, 2025</div>
+          <span class="pub-badge badge-conf">Conference</span>
+        </div>
+      </div>
+
+      <div class="pub-item reveal">
+        <div class="pub-num">C10</div>
+        <div class="pub-body">
+          <div class="pub-title">Progressing from Micro-Credentialing to Micro-Recruiting: Connecting Employers with Ideally-Badged Learners via Last-Stage Invocation of GenAI</div>
+          <div class="pub-meta">P. Amoruso, L. O. Campbell, R. F. DeMara · IEEE Frontiers in Education Conference (FIE'25), Nashville, TN, USA, November 2–5, 2025</div>
+          <span class="pub-badge badge-conf">Conference</span>
+        </div>
+      </div>
+
+      <div class="pub-item reveal">
+        <div class="pub-num">C9</div>
+        <div class="pub-body">
+          <div class="pub-title">Generative AI in STEM Education: Which Targets are Most Advantageous to Facilitate Learning and Employability?</div>
+          <div class="pub-meta">R. F. DeMara, K. Yee, P. Amoruso · Society for Information Technology & Teacher Education (SITE) Interactive Online 2025, September 11–12, 2025</div>
+          <span class="pub-badge badge-conf">Conference</span>
         </div>
       </div>
 
@@ -574,8 +668,26 @@
       <div class="pub-item reveal">
         <div class="pub-num">C7</div>
         <div class="pub-body">
-          <div class="pub-title">Explicating Model Parameters of Human Tutor and AI-based Assistance to Bolster Micro-Credentialing: 14 Semesters of Multivariate Learner Data</div>
-          <div class="pub-meta">P. Amoruso, B. Chen, R. F. DeMara · CSSSA Annual Conference, Santa Fe, 2025</div>
+          <div class="pub-title">IUSE:HSI: A NetLogo-based Approach to Predictive Estimation of Student Performance and Corresponding Tutoring Demand within STEM Undergraduate Courses</div>
+          <div class="pub-meta">P. Amoruso, I. Garibay, L. O. Campbell, J. A. Mejia, F. E. Hernandez, R. F. DeMara · ASEE 2025 Annual Conference, Montreal, Canada, June 24, 2025</div>
+          <span class="pub-badge badge-conf">Conference</span>
+        </div>
+      </div>
+
+      <div class="pub-item reveal">
+        <div class="pub-num">C6</div>
+        <div class="pub-body">
+          <div class="pub-title">Automated Micro-Credentialing and AI-Enhanced Remediation for Online STEM Assessments</div>
+          <div class="pub-meta">P. Amoruso, L. O. Campbell, R. F. DeMara · 2025 Florida Online Innovation Summit (FOIS), UCF, FL, April 10, 2025</div>
+          <span class="pub-badge badge-conf">Conference</span>
+        </div>
+      </div>
+
+      <div class="pub-item reveal">
+        <div class="pub-num">C5</div>
+        <div class="pub-body">
+          <div class="pub-title">GenAIprime: Generative AI for Remediation-Priming of Knowledge Gaps by Dynamically Creating Multimedia Learning Resources</div>
+          <div class="pub-meta">P. Amoruso, B. Chen, R. F. DeMara · 15th IEEE Integrated STEM Education Conference (ISEC), Princeton University, NJ, March 15, 2025</div>
           <span class="pub-badge badge-conf">Conference</span>
         </div>
       </div>
@@ -584,7 +696,7 @@
         <div class="pub-num">C4</div>
         <div class="pub-body">
           <div class="pub-title">Agent-Based Model for Optimal Remedial Staffing to Achieve Learning Outcomes within Cost Constraints</div>
-          <div class="pub-meta">P. Amoruso, I. Garibay, R. F. DeMara · CSSSA 2024, Santa Fe</div>
+          <div class="pub-meta">P. Amoruso, I. Garibay, R. F. DeMara · CSSSA 2024, Santa Fe, NM, October 24–27, 2024</div>
           <span class="pub-badge badge-conf">Conference</span>
           <span class="pub-badge badge-award" style="margin-left:6px;">🏆 Best Poster Award</span>
         </div>
@@ -594,14 +706,28 @@
         <div class="pub-num">C3</div>
         <div class="pub-body">
           <div class="pub-title">FOCAL: Feature-Oriented Cellular Automata Learning for Convolution-Free Image Classification</div>
-          <div class="pub-meta">N. Ari, R. Yarnell, P. Amoruso et al. · IEEE-IS 2024, Varna, Bulgaria</div>
+          <div class="pub-meta">N. Ari, R. Yarnell, P. Amoruso, J. Mell, R. DeMara, A. Wu · IEEE-IS 2024, Varna, Bulgaria, August 29–31, 2024</div>
           <span class="pub-badge badge-conf">Conference</span>
         </div>
       </div>
 
-      <p style="font-size:14px; color:var(--mid-gray); text-align:center; margin-top:8px; font-style:italic;">
-        + 10 additional conference publications and presentations (2022–2026)
-      </p>
+      <div class="pub-item reveal">
+        <div class="pub-num">C2</div>
+        <div class="pub-body">
+          <div class="pub-title">Instructor-Facing Graphical User Interface for Micro-Credential Designation and Refinement in STEM Curricula</div>
+          <div class="pub-meta">P. Amoruso, O. Garibay, L. O. Campbell, R. F. DeMara · ASEE Southeast Section Annual Meeting, Marietta, GA, March 10–12, 2024. DOI: 10.18260/1-2-45539</div>
+          <span class="pub-badge badge-conf">Conference</span>
+        </div>
+      </div>
+
+      <div class="pub-item reveal">
+        <div class="pub-num">C1</div>
+        <div class="pub-body">
+          <div class="pub-title">Personalizing Digitized Assessments and Remediation using an Automated Micro-Credentialing Framework</div>
+          <div class="pub-meta">P. Amoruso, R. F. DeMara, L. O. Campbell, F. Hernandez, A. Mejia · Online Learning Consortium (OLC) 2022 Conference, Orlando, FL, November 15, 2022</div>
+          <span class="pub-badge badge-conf">Conference</span>
+        </div>
+      </div>
 
     </div>
   </div>
@@ -710,8 +836,24 @@
       <div class="teaching-item reveal">
         <div class="teaching-role-badge role-gtg">GTG</div>
         <div class="teaching-body">
+          <div class="teaching-course">EEE4701 — Verification and Validation of Digital Systems</div>
+          <div class="teaching-term">Fall 2025 · UCF ECE Department</div>
+        </div>
+      </div>
+
+      <div class="teaching-item reveal">
+        <div class="teaching-role-badge role-gtg">GTG</div>
+        <div class="teaching-body">
           <div class="teaching-course">EEL3801 — Computer Organization</div>
           <div class="teaching-term">Summer 2022 – Summer 2025 · UCF ECE Department · Awarded Best GTA 2023</div>
+        </div>
+      </div>
+
+      <div class="teaching-item reveal">
+        <div class="teaching-role-badge role-sub">Substitute</div>
+        <div class="teaching-body">
+          <div class="teaching-course">EEL3801 — Computer Organization (Guest Lecture)</div>
+          <div class="teaching-term">July 1, 2025 · UCF ECE Department · Chip Yield, Moore's Law, and Technology Scaling</div>
         </div>
       </div>
 
@@ -791,8 +933,8 @@
 
 <!-- FOOTER -->
 <footer>
-  <strong>Paul Amoruso</strong><br>
-  Ph.D. Candidate · Computer Engineering · University of Central Florida<br><br>
+  <strong>Paul Amoruso, Ph.D.</strong><br>
+  Computer Engineering · University of Central Florida<br><br>
   <a href="mailto:paul.amoruso@ucf.edu">paul.amoruso@ucf.edu</a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/paul-amoruso-761081136/" target="_blank">LinkedIn</a> &nbsp;·&nbsp;
   <a href="https://github.com/AwesomePaul100" target="_blank">GitHub</a><br><br>
@@ -803,9 +945,8 @@
   // Intersection Observer for scroll reveal
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        // Stagger siblings
         const siblings = [...entry.target.parentElement.querySelectorAll('.reveal:not(.visible)')];
         const idx = siblings.indexOf(entry.target);
         setTimeout(() => {
@@ -834,4 +975,3 @@
 </script>
 </body>
 </html>
-
